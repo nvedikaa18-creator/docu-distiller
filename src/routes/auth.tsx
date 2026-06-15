@@ -53,7 +53,8 @@ function AuthPage() {
           options: { emailRedirectTo: `${window.location.origin}/` },
         });
         if (error) throw error;
-        toast.success("Account created! Check your email to confirm.");
+        toast.success("Account created! Welcome aboard.");
+        navigate({ to: "/" });
       } else {
         const { error } = await supabase.auth.signInWithPassword({
           email: parsed.data.email,
