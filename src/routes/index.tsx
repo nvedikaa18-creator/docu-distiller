@@ -17,7 +17,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { extractText, chunkText, previewWords } from "@/lib/document";
-import { summarizeDocument, evaluateSummary } from "@/server/summarize.functions";
+import { summarizeDocument, evaluateSummary } from "@/lib/summarize.functions";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 
